@@ -1,4 +1,4 @@
-package edu.upc.eetac.dsa.asantamaria.ClasesEsenciales3;
+package edu.upc.eetac.dsa.asantamaria.ProtocolTCP;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -154,6 +154,5 @@ public class ClientPH extends JFrame implements ActionListener, Runnable {
 		}
 
 	}
-
 
 }

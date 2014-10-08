@@ -1,4 +1,4 @@
-package edu.upc.eetac.dsa.asantamaria.ClasesEsenciales3;
+package edu.upc.eetac.dsa.asantamaria.ProtocolUDP;
 
 import java.io.Serializable;
 
@@ -8,15 +8,21 @@ import java.io.Serializable;
  *
  */
 
-public class Peticion implements Serializable{
+public class PeticionUDP implements Serializable{
 
-private static final long serialVersionUID = 1502356447687865427L;
+
 
 boolean val;
 String msg = "¿Que hora es?";
 
-public Peticion() {
+public PeticionUDP() {
 
+}
+
+public PeticionUDP(String m, boolean b) {
+
+	this.setMensaje(m);
+	this.setVal(b);
 }
 
 boolean getVal() {
