@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class clienteChinos implements Runnable {
 
 	ServerSocket servidor = null;
-
+	static String ip_server="127.0.0.1";
 	static String nick;
 
 	public clienteChinos() {
@@ -46,7 +46,7 @@ public class clienteChinos implements Runnable {
 
 	void enviarJugada(PartidaChip partida) {
 		try {
-			Socket cli = new Socket("192.168.1.204", 9001);
+			Socket cli = new Socket(ip_server, 9001);
 
 			System.out.println("[]-->Enviando: " + partida.getMensaje()
 					+ " al servidor.");

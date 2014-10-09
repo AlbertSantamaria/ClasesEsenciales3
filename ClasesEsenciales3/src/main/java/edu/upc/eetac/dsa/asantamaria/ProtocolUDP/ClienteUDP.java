@@ -33,7 +33,7 @@ public class ClienteUDP implements Runnable {
 			// send request
 			byte[] buf = new byte[256];
 
-			System.out.println("Escoja tipo de formato");
+			System.out.println("Escoja tipo de formato que desea recibir");
 			System.out.println("");
 			System.out.println("1) Completo");
 			System.out.println("2) Numerico");
@@ -45,7 +45,7 @@ public class ClienteUDP implements Runnable {
 
 			PeticionUDP send;
 
-			System.out.println(op);
+//			System.out.println(op);
 			
 			if (op == 1) {
 				send = new PeticionUDP("", true);
